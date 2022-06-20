@@ -58,6 +58,9 @@ import DialogueBoxPsych;
 #if MODS_ALLOWED
 import sys.FileSystem;
 #end
+#if VIDEOS_ALLOWED
+import vlc.MP4Handler;
+#end
 
 using StringTools;
 
