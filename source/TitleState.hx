@@ -597,18 +597,14 @@ class TitleState extends MusicBeatState
 				case 4:
 					deleteCoolText();
 				// credTextShit.visible = false;
-				// credTextShit.text = 'In association \nwith';
+				// credTextShit.text = 'Vs MaysLastPlay Dev Team  \nPresent';
 				// credTextShit.screenCenter();
 				case 5:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Not associated', 'with'], -40);
+					createCoolText(['Vs MaysLastPlay Dev Team', 'Present'], -40);
 					#else
-					createCoolText(['In association', 'with'], -40);
+					createCoolText(['Vs MaysLastPlay Dev Team', 'Present'], -40);
 					#end
-				case 7:
-					addMoreText('newgrounds', -40);
-					ngSpr.visible = true;
-				// credTextShit.text += '\nNewgrounds';
 				case 8:
 					deleteCoolText();
 					ngSpr.visible = false;
