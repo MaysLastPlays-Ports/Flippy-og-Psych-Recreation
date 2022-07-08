@@ -597,13 +597,13 @@ class TitleState extends MusicBeatState
 				case 4:
 					deleteCoolText();
 				// credTextShit.visible = false;
-				// credTextShit.text = 'Vs MaysLastPlay Dev Team  \nPresent';
+				// credTextShit.text = 'Vs MaysLastPlay Team  \nPresent';
 				// credTextShit.screenCenter();
 				case 5:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Vs MaysLastPlay Dev Team', 'Present'], -40);
+					createCoolText(['Vs MaysLastPlay Team', 'Present'], -40);
 					#else
-					createCoolText(['Vs MaysLastPlay Dev Team', 'Present'], -40);
+					createCoolText(['Vs MaysLastPlay Team', 'Present'], -40);
 					#end
 				case 8:
 					deleteCoolText();
