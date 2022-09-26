@@ -1,19 +1,17 @@
-# Friday Night Funkin' - Play Engine
-Engine Will be used on Vs MaysLastPlay mod
-engine made as a custom build of psych engine with some modification to it. as psych engine, this engine has mods support with lua too.
+# Friday Night Funkin' Way To Hell Mod
 
 # Compiling infos:
 you must have [newer version of haxe](https://haxe.org/download/) because 4.1.5 misses lots of stuff
 
 follow a friday night funkin' source code compilation tutorial, after this you will need to install luajit.
 
-the engine has an android support. for making mp4 cutscene works in android you have to install this extension: `haxelib git https://github.com/jigsaw-4277821/extension-videoview ` on a command prompt/powershell
+the engine has an android support. for making mp4 cutscene works in android you have to install this extension: `haxelib git https://github.com/MaysLastPlay77/extension-videoview ` on a command prompt/powershell
 
-to install luajit you have to use this because of the android support stuff: `haxelib git linc_luajit https://github.com/jigsaw-4277821/linc_luajit-nebulazorua ` on a command prompt/powershell
+to install luajit you have to use this because of the android support stuff: `haxelib git linc_luajit https://github.com/MAJigsaw77/linc_luajit-nebulazorua ` on a command prompt/powershell
 
 if you don't want your mod to run lua, remove in project.xml the "lua_allowed" line
 
-also you need this for compiling: `https://github.com/jigsaw-4277821/androidtools ` on a command prompt/powershell 
+also you need this for compiling: `https://github.com/MaysLastPlay77/androidtools ` on a command prompt/powershell 
 
 ## Credits:
 * psych engine team - base engine
@@ -21,7 +19,7 @@ also you need this for compiling: `https://github.com/jigsaw-4277821/androidtool
 
 ### Special thanks
 * psych engine contributors - contributing on the base engine
-* vegethyt - additional coding and vs mayslastplay dev
+* vegethyt - additional coding
 * m.a jigsaw - android support and libraries
 * angël - android controls style maker
 
@@ -35,28 +33,6 @@ also you need this for compiling: `https://github.com/jigsaw-4277821/androidtool
 ## Mods support
 * probably one of the main points of this engine, you can code in .lua files outside of the source code, making your own weeks without even messing with the source!
 * comes with a mod organizing/disabling menu. 
-
-
-## Atleast one change to every week:
-### week 1:
-  * new dad left sing sprite 
-  * unused stage lights are now used
-### week 2:
-  * both bf and skid & pump does "hey!" animations
-  * thunders does a quick light flash and zooms the camera in slightly
-  * added a quick transition/cutscene to monster
-### week 3:
-  * bf does "hey!" during philly nice
-  * blammed has a cool new colors flash during that sick part of the song
-### week 4:
-  * better hair physics for mom/boyfriend (maybe even slightly better than week 7's :eyes:)
-  * henchmen die during all songs. yeah :(
-### week 5:
-  * bottom boppers and gf does "hey!" animations during cocoa and eggnog
-  * on winter horrorland, gf bops her head slower in some parts of the song.
-### week 6:
-  * on thorns, the hud is hidden during the cutscene
-  * also there's the background girls being spooky during the "hey!" parts of the instrumental
 
 ## Cool new chart editor changes and countless bug fixes
 ![](https://github.com/shadowmario/fnf-psychengine/blob/main/docs/img/chart.png?raw=true)
