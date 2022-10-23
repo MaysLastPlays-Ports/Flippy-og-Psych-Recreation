@@ -587,7 +587,7 @@ class TitleState extends MusicBeatState
 				case 3:
 					#if PSYCH_WATERMARKS
 					addMoreText('MaysLastPlay', 15);
-					addMoreText('Saw (M.A. Jigsaw)', 15);
+					addMoreText('M.A. Jigsaw', 15);
 					addMoreText('VegethYT', 15);
 					#else
 					addMoreText('present');
@@ -625,16 +625,16 @@ class TitleState extends MusicBeatState
 				case 12:
 					deleteCoolText();
 				// credTextShit.visible = false;
-				// credTextShit.text = "Friday";
+				// credTextShit.text = "Friday Night Funkin";
 				// credTextShit.screenCenter();
 				case 13:
-					addMoreText('Friday');
+					addMoreText('Friday Night Funkin');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('Night');
-				// credTextShit.text += '\nNight';
+					addMoreText('Way To Hell');
+				// credTextShit.text += '\nWay To Hell';
 				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Versus One Demo'); // credTextShit.text += '\nVersus One Demo';
 
 				case 16:
 					skipIntro();
