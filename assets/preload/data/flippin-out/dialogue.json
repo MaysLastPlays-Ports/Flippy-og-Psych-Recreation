@@ -1,0 +1,92 @@
+{
+	"dialogue": [
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Enough."
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Seeing you dead is the only way to be satisfied."
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "The rest don't even know how to react when I'm about to kill them."
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Phathetic..."
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What can you do now?"
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "..."
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hahaha!!"
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I love watching you 2 suffer."
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I bruised your girlfriend, if that makes you more brave."
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "phycho_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You can't achieve anything dwarf."
+		},
+		{
+			"sound": "dialogue_sound/phsyco_fliqpy_text",
+			"speed": 0.025,
+			"portrait": "phycho_fliqpy",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "IDIOT!!"
+		}
+	]
+}

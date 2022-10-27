@@ -1,0 +1,68 @@
+{
+	"dialogue": [
+		{
+			"sound": "dialogue_sound/crazy_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "crazy_fliqpy",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "UAGH! enough with this shit!"
+		},
+		{
+			"sound": "dialogue_sound/crazy_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "crazy_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I'm sick of you I'll make you die of all kinds of things."
+		},
+		{
+			"sound": "dialogue_sound/crazy_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "crazy_fliqpy",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "Burned, Electrocuted, Drowned, IN ALL POSSIBLE WAYS!!"
+		},
+		{
+			"sound": "dialogue_sound/crazy_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "crazy_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "And you better prepare yourself."
+		},
+		{
+			"sound": "dialogue_sound/crazy_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "crazy_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Becuase this time..."
+		},
+		{
+			"sound": "dialogue_sound/crazy_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "crazy_fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I won't have mercy on you."
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "..."
+		},
+		{
+			"sound": "dialogue_sound/crazy_fliqpy_text",
+			"speed": 0.05,
+			"portrait": "crazy_fliqpy",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "Yeah..."
+		}
+	]
+}
