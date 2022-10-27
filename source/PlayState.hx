@@ -1657,6 +1657,7 @@ class PlayState extends MusicBeatState
 				var antialias:Bool = ClientPrefs.globalAntialiasing;
 								if(isCreepyStage) {
 					introAlts = introAssets.get('Creepy');
+								}
 				if(isPixelStage) {
 					introAlts = introAssets.get('pixel');
 					antialias = false;
