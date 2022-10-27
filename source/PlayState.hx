@@ -112,6 +112,7 @@ class PlayState extends MusicBeatState
 	public var dadGroup:FlxSpriteGroup;
 	public var gfGroup:FlxSpriteGroup;
 	public static var curStage:String = '';
+	public static var isCreepyStage:Bool = false;
 	public static var isPixelStage:Bool = false;
 	public static var SONG:SwagSong = null;
 	public static var isStoryMode:Bool = false;
@@ -370,6 +371,14 @@ class PlayState extends MusicBeatState
 					curStage = 'school';
 				case 'thorns':
 					curStage = 'schoolEvil';
+				case 'flippy-roll' | 'happy-tree-land':
+					curStage = 'land-cute';	
+				case 'massacre':
+					curStage = 'land-deadbodys';
+				case 'flippin-out':
+					curStage = 'land-destroyed';
+				case 'unflipped-out':
+					curStage = 'land-lol';
 				default:
 					curStage = 'stage';
 			}
@@ -381,6 +390,7 @@ class PlayState extends MusicBeatState
 				directory: "",
 				defaultZoom: 0.9,
 				isPixelStage: false,
+				isCreepyStage: false,
 			
 				boyfriend: [770, 100],
 				girlfriend: [400, 130],
@@ -395,6 +405,7 @@ class PlayState extends MusicBeatState
 		}
 
 		defaultCamZoom = stageData.defaultZoom;
+	  isCreepyStage = stageData.isCreepyStage;
 		isPixelStage = stageData.isPixelStage;
 		BF_X = stageData.boyfriend[0];
 		BF_Y = stageData.boyfriend[1];
@@ -424,9 +435,61 @@ class PlayState extends MusicBeatState
 
 		switch (curStage)
 		{
-			case 'stage': //Week 1
-				var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
+			case 'land-cute': //Week 1
+			GameOverSubstate.deathSoundName = 'fnf_loss_sfx';
+			GameOverSubstate.loopSoundName = 'gameOver-creepy';
+			GameOverSubstate.endSoundName = 'gameOverEnd-creepy';
+			GameOverSubstate.characterName = 'bf';
+			
+				var bg:BGSprite = new BGSprite('land-cute/bgWalls', -1000, -500, 0.2, 0.2);
+				bg.setGraphicSize(Std.int(bg.width * 0.8));
+				bg.updateHitbox();
 				add(bg);
+
+				var fgSnow:BGSprite = new BGSprite('land-cute/fgSnow', -600, 700);
+				add(fgSnow);
+
+			case 'land-deadbodys': //Week 1
+			GameOverSubstate.deathSoundName = 'fnf_loss_sfx';
+			GameOverSubstate.loopSoundName = 'gameOver-creepy';
+			GameOverSubstate.endSoundName = 'gameOverEnd-creepy';
+			GameOverSubstate.characterName = 'bf';
+	
+				var bg:BGSprite = new BGSprite('land-deadbodys/bgWalls', -1000, -500, 0.2, 0.2);
+				bg.setGraphicSize(Std.int(bg.width * 0.8));
+				bg.updateHitbox();
+				add(bg);
+
+				var fgSnow:BGSprite = new BGSprite('land-deadbodys/fgSnow', -600, 700);
+				add(fgSnow);
+
+			case 'land-destroyed': //Week 1
+			GameOverSubstate.deathSoundName = 'fnf_loss_sfx';
+			GameOverSubstate.loopSoundName = 'gameOver-creepy';
+			GameOverSubstate.endSoundName = 'gameOverEnd-creepy';
+			GameOverSubstate.characterName = 'bf';
+	
+				var bg:BGSprite = new BGSprite('land-destroyed/stageback', -600, -200, 0.9, 0.9);
+				add(bg);
+				var stageFront:BGSprite = new BGSprite('land-destroyed/stagefront', -650, 600, 0.9, 0.9);
+				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+				stageFront.updateHitbox();
+				add(stageFront);
+
+			case 'land-lol': //Week 1
+			GameOverSubstate.deathSoundName = 'fnf_loss_sfx';
+			GameOverSubstate.loopSoundName = 'gameOver';
+			GameOverSubstate.endSoundName = 'gameOverEnd';
+			GameOverSubstate.characterName = 'bf-chill';
+			
+				var bg:BGSprite = new BGSprite('land-lol/stageback', -600, -200, 0.9, 0.9);
+				add(bg);
+
+				var stageFront:BGSprite = new BGSprite('land-lol/stagefront', -650, 600, 0.9, 0.9);
+				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+				stageFront.updateHitbox();
+				add(stageFront);				
+			}
 
 				var stageFront:BGSprite = new BGSprite('stagefront', -650, 600, 0.9, 0.9);
 				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
@@ -697,6 +760,9 @@ class PlayState extends MusicBeatState
 
 		if(isPixelStage) {
 			introSoundsSuffix = '-pixel';
+		}
+		if(isCreepyStage) {
+			introSoundsSuffix = '-creepy';
 		}
 
 		add(gfGroup); //Needed for blammed lights
@@ -1590,6 +1656,8 @@ class PlayState extends MusicBeatState
 
 				var introAlts:Array<String> = introAssets.get('default');
 				var antialias:Bool = ClientPrefs.globalAntialiasing;
+								if(isCreepyStage) {
+					introAlts = introAssets.get('Creepy');
 				if(isPixelStage) {
 					introAlts = introAssets.get('pixel');
 					antialias = false;
@@ -3436,9 +3504,15 @@ class PlayState extends MusicBeatState
 			else if (combo > 4)
 				daRating = 'bad';
 		 */
-
+    var creepyShitPart1:String = "";
+	  var creepyShitPart2:String = '';	
 		var pixelShitPart1:String = "";
 		var pixelShitPart2:String = '';
+
+ 	if (PlayState.isCreepyStage)
+		{
+			creepyShitPart1 = 'Creepy/';
+			creepyShitPart2 = '';
 
 		if (PlayState.isPixelStage)
 		{
@@ -3471,6 +3545,14 @@ class PlayState extends MusicBeatState
 
 		comboSpr.velocity.x += FlxG.random.int(1, 10);
 		insert(members.indexOf(strumLineNotes), rating);
+
+		if (!PlayState.isCreepyStage)
+			{
+				rating.setGraphicSize(Std.int(rating.width * 0.7));
+				rating.antialiasing = ClientPrefs.globalAntialiasing;
+				comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
+				comboSpr.antialiasing = ClientPrefs.globalAntialiasing;
+			}
 
 		if (!PlayState.isPixelStage)
 		{
