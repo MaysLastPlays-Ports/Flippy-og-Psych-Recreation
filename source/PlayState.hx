@@ -3514,7 +3514,7 @@ class PlayState extends MusicBeatState
 		{
 			creepyShitPart1 = 'Creepy/';
 			creepyShitPart2 = '';
-
+		}
 		if (PlayState.isPixelStage)
 		{
 			pixelShitPart1 = 'pixelUI/';
