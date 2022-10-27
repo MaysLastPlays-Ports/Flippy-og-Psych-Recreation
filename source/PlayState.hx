@@ -755,7 +755,7 @@ class PlayState extends MusicBeatState
 		}
 
 		if(isPixelStage) {
-			introSoundsSuffix = '-creepy';
+			introSoundsSuffix = '-pixel';
 		}
 
 		add(gfGroup); //Needed for blammed lights
@@ -1645,12 +1645,12 @@ class PlayState extends MusicBeatState
 
 				var introAssets:Map<String, Array<String>> = new Map<String, Array<String>>();
 				introAssets.set('default', ['ready', 'set', 'go']);
-				introAssets.set('creepy', ['creepyUI/ready-creepy', 'creepyUI/set-creepy', 'creepyUI/date-creepy']);
+				introAssets.set('pixel', ['creepyUI/ready-pixel', 'creepyUI/set-pixel', 'creepyUI/date-pixel']);
 
 				var introAlts:Array<String> = introAssets.get('default');
 				var antialias:Bool = ClientPrefs.globalAntialiasing;
 				if(isPixelStage) {
-					introAlts = introAssets.get('creepy');
+					introAlts = introAssets.get('pixel');
 					antialias = false;
 				}
 
@@ -3501,8 +3501,8 @@ class PlayState extends MusicBeatState
 
 		if (PlayState.isPixelStage)
 		{
-			pixelShitPart1 = 'creepyUI/';
-			pixelShitPart2 = '-creepy';
+			pixelShitPart1 = 'pixelUI/';
+			pixelShitPart2 = '-pixel';
 		}
 
 		rating.loadGraphic(Paths.image(pixelShitPart1 + daRating + pixelShitPart2));
