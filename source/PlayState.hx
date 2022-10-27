@@ -370,7 +370,7 @@ class PlayState extends MusicBeatState
 					curStage = 'school';
 				case 'thorns':
 					curStage = 'schoolEvil';
-				case 'flippy-roll' | 'happy-tree-land':
+        case 'flippy-roll' | 'happy-tree-land':
 					curStage = 'land-cute';	
 				case 'massacre':
 					curStage = 'land-deadbodys';
@@ -486,6 +486,27 @@ class PlayState extends MusicBeatState
 				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 				stageFront.updateHitbox();
 				add(stageFront);
+
+				var stageFront:BGSprite = new BGSprite('stagefront', -650, 600, 0.9, 0.9);
+				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+				stageFront.updateHitbox();
+				add(stageFront);
+				if(!ClientPrefs.lowQuality) {
+					var stageLight:BGSprite = new BGSprite('stage_light', -125, -100, 0.9, 0.9);
+					stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
+					stageLight.updateHitbox();
+					add(stageLight);
+					var stageLight:BGSprite = new BGSprite('stage_light', 1225, -100, 0.9, 0.9);
+					stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
+					stageLight.updateHitbox();
+					stageLight.flipX = true;
+					add(stageLight);
+
+					var stageCurtains:BGSprite = new BGSprite('stagecurtains', -500, -300, 1.3, 1.3);
+					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+					stageCurtains.updateHitbox();
+					add(stageCurtains);
+				}
 
 				var stageFront:BGSprite = new BGSprite('stagefront', -650, 600, 0.9, 0.9);
 				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
@@ -755,7 +776,7 @@ class PlayState extends MusicBeatState
 		}
 
 		if(isPixelStage) {
-			introSoundsSuffix = '-pixel';
+			introSoundsSuffix = '-creepy';
 		}
 
 		add(gfGroup); //Needed for blammed lights
@@ -1645,13 +1666,12 @@ class PlayState extends MusicBeatState
 
 				var introAssets:Map<String, Array<String>> = new Map<String, Array<String>>();
 				introAssets.set('default', ['ready', 'set', 'go']);
-				introAssets.set('pixel', ['pixelUI/ready-pixel', 'pixelUI/set-pixel', 'pixelUI/date-pixel']);
+				introAssets.set('creepy', ['creepyUI/ready-creepy', 'creepyUI/set-creepy', 'creepyUI/date-creepy']);
 
 				var introAlts:Array<String> = introAssets.get('default');
 				var antialias:Bool = ClientPrefs.globalAntialiasing;
-								}
 				if(isPixelStage) {
-					introAlts = introAssets.get('pixel');
+					introAlts = introAssets.get('creepy');
 					antialias = false;
 				}
 
@@ -3497,15 +3517,13 @@ class PlayState extends MusicBeatState
 				daRating = 'bad';
 		 */
 
-    var creepyShitPart1:String = "";
-	  var creepyShitPart2:String = '';	
 		var pixelShitPart1:String = "";
 		var pixelShitPart2:String = '';
 
 		if (PlayState.isPixelStage)
 		{
-			pixelShitPart1 = 'pixelUI/';
-			pixelShitPart2 = '-pixel';
+			pixelShitPart1 = 'creepyUI/';
+			pixelShitPart2 = '-creepy';
 		}
 
 		rating.loadGraphic(Paths.image(pixelShitPart1 + daRating + pixelShitPart2));
