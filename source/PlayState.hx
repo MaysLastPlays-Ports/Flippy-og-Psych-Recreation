@@ -3504,6 +3504,7 @@ class PlayState extends MusicBeatState
 			else if (combo > 4)
 				daRating = 'bad';
 		 */
+
     var creepyShitPart1:String = "";
 	  var creepyShitPart2:String = '';	
 		var pixelShitPart1:String = "";
