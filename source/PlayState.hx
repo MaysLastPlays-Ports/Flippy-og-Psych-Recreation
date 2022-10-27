@@ -488,8 +488,7 @@ class PlayState extends MusicBeatState
 				var stageFront:BGSprite = new BGSprite('land-lol/stagefront', -650, 600, 0.9, 0.9);
 				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 				stageFront.updateHitbox();
-				add(stageFront);				
-			}
+				add(stageFront);
 
 				var stageFront:BGSprite = new BGSprite('stagefront', -650, 600, 0.9, 0.9);
 				stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
