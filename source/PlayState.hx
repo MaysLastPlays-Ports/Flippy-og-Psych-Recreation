@@ -112,7 +112,6 @@ class PlayState extends MusicBeatState
 	public var dadGroup:FlxSpriteGroup;
 	public var gfGroup:FlxSpriteGroup;
 	public static var curStage:String = '';
-	public static var isCreepyStage:Bool = false;
 	public static var isPixelStage:Bool = false;
 	public static var SONG:SwagSong = null;
 	public static var isStoryMode:Bool = false;
@@ -390,7 +389,6 @@ class PlayState extends MusicBeatState
 				directory: "",
 				defaultZoom: 0.9,
 				isPixelStage: false,
-				isCreepyStage: false,
 			
 				boyfriend: [770, 100],
 				girlfriend: [400, 130],
@@ -405,7 +403,6 @@ class PlayState extends MusicBeatState
 		}
 
 		defaultCamZoom = stageData.defaultZoom;
-	  isCreepyStage = stageData.isCreepyStage;
 		isPixelStage = stageData.isPixelStage;
 		BF_X = stageData.boyfriend[0];
 		BF_Y = stageData.boyfriend[1];
@@ -759,9 +756,6 @@ class PlayState extends MusicBeatState
 
 		if(isPixelStage) {
 			introSoundsSuffix = '-pixel';
-		}
-		if(isCreepyStage) {
-			introSoundsSuffix = '-creepy';
 		}
 
 		add(gfGroup); //Needed for blammed lights
@@ -1655,8 +1649,6 @@ class PlayState extends MusicBeatState
 
 				var introAlts:Array<String> = introAssets.get('default');
 				var antialias:Bool = ClientPrefs.globalAntialiasing;
-								if(isCreepyStage) {
-					introAlts = introAssets.get('Creepy');
 								}
 				if(isPixelStage) {
 					introAlts = introAssets.get('pixel');
@@ -3510,11 +3502,6 @@ class PlayState extends MusicBeatState
 		var pixelShitPart1:String = "";
 		var pixelShitPart2:String = '';
 
- 	if (PlayState.isCreepyStage)
-		{
-			creepyShitPart1 = 'Creepy/';
-			creepyShitPart2 = '';
-		}
 		if (PlayState.isPixelStage)
 		{
 			pixelShitPart1 = 'pixelUI/';
@@ -3546,14 +3533,6 @@ class PlayState extends MusicBeatState
 
 		comboSpr.velocity.x += FlxG.random.int(1, 10);
 		insert(members.indexOf(strumLineNotes), rating);
-
-		if (!PlayState.isCreepyStage)
-			{
-				rating.setGraphicSize(Std.int(rating.width * 0.7));
-				rating.antialiasing = ClientPrefs.globalAntialiasing;
-				comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
-				comboSpr.antialiasing = ClientPrefs.globalAntialiasing;
-			}
 
 		if (!PlayState.isPixelStage)
 		{
