@@ -1,4 +1,4 @@
-# Friday Night Funkin' Way To Hell Mod
+# Friday Night Funkin' Vs Fliqpy
 
 # Compiling infos:
 you must have [newer version of haxe](https://haxe.org/download/) because 4.1.5 misses lots of stuff
