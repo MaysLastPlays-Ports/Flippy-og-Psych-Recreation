@@ -493,6 +493,8 @@ class PlayState extends MusicBeatState
 		}
 
 		add(gfGroup); //Needed for blammed lights
+		add(dadGroup);
+		add(boyfriendGroup);
 
 		#if LUA_ALLOWED
 		luaDebugGroup = new FlxTypedGroup<DebugLuaText>();
