@@ -1,0 +1,36 @@
+{
+	"dialogue": [
+		{
+			"sound": "dialogue_sound/fliqpy_text",
+			"speed": 0.05,
+			"portrait": "fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Ugh, shit, how are you supposed to be so good at this?"
+		},
+		{
+			"sound": "dialogue_sound/fliqpy_text",
+			"speed": 0.05,
+			"portrait": "fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I swear that when you lose, you will be the first to die along with those at the bottom."
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "... beeeep"
+		},
+		{
+			"sound": "dialogue_sound/fliqpy_text",
+			"speed": 0.05,
+			"portrait": "fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "SHUT UP!!"
+		}
+	]
+}

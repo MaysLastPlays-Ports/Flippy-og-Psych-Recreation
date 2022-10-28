@@ -1,0 +1,44 @@
+{
+	"dialogue": [
+		{
+			"sound": "dialogue_sound/fliqpy_text",
+			"speed": 0.05,
+			"portrait": "fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hey kid. What are you looking for?"
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "beep"
+		},
+		{
+			"sound": "dialogue_sound/fliqpy_text",
+			"speed": 0.05,
+			"portrait": "fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What?. Do you want me to join you for a rap battle?"
+		},
+		{
+			"sound": "dialogue_sound/fliqpy_text",
+			"speed": 0.05,
+			"portrait": "fliqpy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Well, I'm not in the mood for this kind of thing, but go ahead."
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "beep"
+		}
+	]
+}

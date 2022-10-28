@@ -1,0 +1,172 @@
+{
+	"dialogue": [
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Agh, what happened?"
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Bap boop?"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Uh?"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Uh, who are you?"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "UH!!"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What happened here??"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh dammit..."
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I've gone mad."
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Again..."
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Uh?"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Who are you?"
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Bop beep"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Boyfriend?"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh, sorry if I did something ugly to you."
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hey. I see you have a microphone. You want to... sing something? It helps me stay calm."
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Bap?"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Yep"
+		},
+		{
+			"sound": "dialogue_sound/bf_text",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Boop beep!"
+		},
+		{
+			"sound": "dialogue_sound/flippy_text",
+			"speed": 0.05,
+			"portrait": "flippy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Here we go!"
+		}
+	]
+}
