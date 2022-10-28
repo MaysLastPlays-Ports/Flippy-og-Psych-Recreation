@@ -1,0 +1,68 @@
+{
+	"songs": [
+		[
+			"flippy-roll",
+			"fliqpy",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"happy-tree-land",
+			"fliqpy",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"massacre",
+			"fliqpy-crazy",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"flippin-out",
+			"fliqpy-ptsd",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"unflipped-out",
+			"flippy",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"difficulties": "hard,old",
+	"weekCharacters": [
+		"",
+		"flipped",
+		""
+	],
+	"storyName": "ptsd",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
